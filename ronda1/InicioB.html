@@ -1,0 +1,35 @@
+{{ block title }}
+Asignación de Roles: Jugador B
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+   Se está dando inicio a la ronda <strong>1/5</strong>.
+   <br>
+   <br>
+   <strong>Usted es el Jugador B</strong>. Por lo tanto, le corresponde
+   jugar el <strong>"Juego de las flechas"</strong>.
+   <br>
+   <br>
+   <strong>Instrucciones:</strong>
+   <br>
+   <br>
+   Se le presentará en la pantalla un cuadro de 4x5 (20 casillas) lleno de flechas apuntando
+   hacia la derecha <strong>(→)</strong> o hacia abajo <strong>(↓)</strong>. El objetivo del juego es contar cuántas de las flechas apuntan hacia 
+   la derecha <strong>(→)</strong>, insertar el número en la casilla de texto y presionar el botón de "Enter". 
+   Luego, le aparecerá un nuevo cuadro en donde debe repetir el proceso.
+   <br>
+   <br>
+   El juego contabilizará el número de intentos y cuántas respuestas correctas obtiene. 
+   Intente acertar la mayor cantidad que le sea posible dentro de <strong>60 segundos</strong>. 
+   Transcurrido el tiempo, el juego acabará automáticamente y tendrá que esperar a que su pareja 
+   <strong>(Jugador A)</strong> vea los resultados y tome una decisión. 
+   <br>
+   <br>
+   Al pulsar el botón de "Siguiente" usted dará inicio al juego de las flechas. Por favor, proceda.
+
+   {{ next_button }}
+</p>
+
+{{ endblock }}

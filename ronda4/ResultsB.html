@@ -1,0 +1,18 @@
+{{ block title }}
+Resultados: Jugador B
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    El <strong>Jugador A</strong> ha decidido cederle <strong>{{group.transferencia}}</strong> del total
+    del monto.
+    Por lo tanto, al <strong>Jugador A</strong> le corresponde quedarse con <strong>{{offer}}</strong>.
+    <br>
+    <br>
+    Ha terminado la ronda <strong>4/5</strong>. Por favor, prosiga a la siguiente ronda.
+    
+    {{ next_button }}
+</p>
+
+{{ endblock }}

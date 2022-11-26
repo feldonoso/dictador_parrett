@@ -1,0 +1,17 @@
+{{ block title }}
+Resultados: Jugador A
+{{ endblock }}
+
+{{ block content }}
+
+<p>
+    Usted ha decidido repartirle <strong>{{group.transferencia}}</strong> al <strong>Jugador B</strong>.
+    Por lo tanto, a usted le corresponde quedarse con <strong>{{offer}}</strong>.
+    <br>
+    <br>
+    Ha terminado la ronda <strong>4/5</strong>. Por favor, prosiga a la siguiente ronda.
+    
+    {{ next_button }}
+</p>
+
+{{ endblock }}

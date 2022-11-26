@@ -1,0 +1,36 @@
+{% block styles  %}
+    <link href="{% static 'real_effort.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{{ block title }}
+Juego Cognitivo
+{{ endblock }}
+
+{{ block content }}
+<div class="d-flex flex-column align-items-center">
+    <h3>
+        Usted es el <strong>{{player.role}}</strong> <br>
+        Intento <span id="iter-txt"></span>
+    </h3>
+    <p>Aciertos: <span id="solved-txt"></span>. </p>
+    <img class="captcha m-1" id="captcha-img">
+
+    <div class="input-group m-1">
+        <input type="{{ input_type }}" id="answer-inp" class="form-control"
+               placeholder="{{ placeholder }}"
+               autocorrect="off" autocapitalize="off" spellcheck="false">
+        <button type="button" id="submit-btn" class="btn btn-outline-secondary">Enter</button>
+    </div>
+
+    <p class="warn" id="warning-txt"></p>
+
+</div>
+<br>
+{{ include Constants.instructions_template }}
+
+{{ endblock }}
+
+{{ block scripts }}
+<script src="{{ static 'real_effort.js' }}"></script>
+{{ if DEBUG }}<script src="{{ static 'real_effort_cheating.js' }}"></script>{{ endif }}
+{{ endblock }}
