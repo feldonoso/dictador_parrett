@@ -19,8 +19,17 @@ SESSION_CONFIGS = [
         num_demo_participants=10,
         app_sequence=['consentimiento', 'intro', "ronda1", 'ronda2', 'ronda3', 'ronda4', 'ronda5', 'survey', 'payment_info'],
         task='matrix',
-        attempts_per_puzzle=1,
+        attempts_per_puzzle=1,    
     ),
+    dict(
+        name="matrices2",
+        display_name="Juego del Dictador Parrett 2.0",
+        num_demo_participants=10,
+        app_sequence=["ronda1", 'ronda2', 'ronda3', 'ronda4', 'ronda5', 'payment_info'],
+        task='matrix',
+        attempts_per_puzzle=1,    
+    ),
+
     #dict( 'consentimiento', 'intro', "real_effort", 
     #    name='survey', app_sequence=['survey', 'payment_info'], num_demo_participants=1
     #),

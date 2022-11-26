@@ -77,6 +77,7 @@ class Player(BasePlayer):
     mensaje = models.StringField(label="")
     pago_a = models.FloatField(initial=0) #resta/10
     pago_b = models.FloatField(initial=0) #transferencia/10
+    mediana = models.FloatField()
 
 
 
@@ -420,6 +421,7 @@ class Choice(Page):
 
 
         mediana=st.median(myList)
+        player.mediana = st.median(myList)
         m=float(mediana)
         
 
