@@ -24,7 +24,10 @@ Juego Cognitivo
 
     <p class="warn" id="warning-txt"></p>
 
-
+    {{ if DEBUG }}
+    <button type="button" id="cheat-btn" class="btn btn-dark">Cheat</button>
+    {{ endif }}
+    
 </div>
 <br>
 {{ include Constants.instructions_template }}
