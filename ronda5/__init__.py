@@ -74,6 +74,7 @@ class Player(BasePlayer):
     monto_generado = models.IntegerField(initial=0)
     tiebreaker = models.IntegerField(initial=3)
     mensaje = models.StringField(label="")
+    mediana = models.FloatField()
 
 
 
@@ -393,6 +394,7 @@ class Choice(Page):
         player_a = player.group.get_player_by_id(1)
 
         mediana=st.median(myList)
+        player.mediana = st.median(myList)
         m=float(mediana)
         
 
